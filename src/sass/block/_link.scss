@@ -1,0 +1,41 @@
+.link{
+    color: white;
+    text-shadow: 3px 3px 3px black, -3px -3px 3px black;
+    padding: 6px 0;
+    font-weight: 700;
+    font-size: 32px;
+    text-decoration: none;
+    &:hover{
+        color: black;
+        text-shadow: 2px 2px 3px white, -2px -2px 3px white;
+    }
+}
+@media screen and (max-width:1440px){
+    .link{
+        padding: 5px 0;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:1024px){
+    .link{
+        font-size: 20px;
+        padding: 7px 0;
+    }
+}
+@media screen and (max-width:768px){
+    .link{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:560px){
+    .link{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:425px){
+    .link{
+        font-size: 18px;
+        margin-top: 0;
+    }
+}

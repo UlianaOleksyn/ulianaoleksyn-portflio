@@ -1,0 +1,163 @@
+.skill{
+    padding-top: 90px;
+    &__wrapper{
+        padding-top: 60px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 260px));
+        grid-template-rows: repeat(2, auto);
+        grid-auto-rows:  auto;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__item{
+        background-color: $main_color;
+        border: 1px solid #9C17EE;
+        position: relative;
+        padding: 15px;
+        &_icon{
+            position: absolute;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            img{
+                max-height: 90%;
+                width: auto;
+            }
+        }
+        &_icons{
+            height: 80px;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            img{
+                max-width: 45%;
+                height: auto;
+                position: relative;
+
+            }
+        }
+        &_header{
+            margin-top: 90px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            text-shadow: 1px 1px black;
+        }
+        &_descr{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #000;
+            margin-top: 8px;
+            text-align: justify;
+        }
+        &_additional{
+            display: none;
+            background: rgba(187,107,217, 0.6);
+        }
+    }
+    &__more{
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 30%;
+        cursor: pointer;
+        img{
+            margin-top: 20px;
+        }
+    }
+    &__kind-work{
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        &_item{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        &_header{
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            position: relative;
+            padding-left: 15px;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -35%;
+                width: 42px;
+                height: 42px;
+                border-radius: 100%;
+                background-color: $main_color;
+                vertical-align: middle;
+                z-index: -1;
+            }
+        }
+        &_procent{
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        &_graf{
+            margin-top: 20px;
+            width: 100%;
+            height: 7px;
+            background-color:blanchedalmond;
+            position: relative;
+            span{
+                position: absolute;
+                height: 9px;
+                top: -1px;
+                left: 0;
+                background-color: $main_color;
+            }
+            .c1{
+                width: 100%;
+            }
+            .c2{
+                width: 50%;
+            }
+            .c3{
+                width: 75%;
+            }
+            .c4{
+                width: 20%;
+            }
+        }
+    }
+};
+@media screen and (max-width: 600px){
+    .skill{
+        &__kind-work{
+            justify-content: center;
+            &_item{
+                width: 85%;
+            }
+            &_header{
+                font-size: 14px;
+                padding-left: 10px;
+                &:before{
+                    content: '';
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+            &_procent{
+                font-size: 14px;
+            }
+        }
+    }
+}

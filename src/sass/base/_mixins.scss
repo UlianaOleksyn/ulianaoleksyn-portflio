@@ -1,0 +1,48 @@
+@mixin before_circle{
+    &:before{
+        content: '';
+        position: absolute;
+        margin-left: -15px;
+        top: -8%;
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        background-color: $main_color;
+        vertical-align: middle;
+        z-index: -1;
+    }
+    @media screen and(max-width:1024px){
+        &:before{
+        top: -17%;
+        width: 56px;
+        height: 56px;
+        }
+    }
+    @media screen and(max-width:768px){
+        &:before{
+        top: -65%;
+        width: 48px;
+        height: 48px;
+        margin-left: -9px;
+        }
+    }
+    @media screen and(max-width:560px){
+        &:before{
+        top: -5%;
+        }
+    }
+    @media screen and(max-width:425px){
+        &:before{
+        top: 0;
+        width: 36px;
+        height: 36px;
+        margin-left: -4px;
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+@import "libs/bootstrap-reboot";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import "base/variables";
+@import "base/mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1900px;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+}
+
+@import "block/sidepanel";
+@import "block/promo";
+@import "block/title";
+@import "block/buttons";
+@import "block/link";
+@import "block/menu";
+@import "block/social-icons";
+@import "block/about-me";
+@import "block/divider";
+@import "block/skill";
+@import "block/porfolio";
+@import "block/price";
+
+.container{
+    width: 70vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 85vw;
+    }    
+}
+
+@media screen and (max-width:425px){
+    .container{
+        width: 95vw;
+    }    
+}

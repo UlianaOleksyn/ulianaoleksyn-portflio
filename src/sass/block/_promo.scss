@@ -1,0 +1,89 @@
+.promo{
+    position: relative;
+    min-height: 100vh;
+    background: url('../image/background_promo.png') no-repeat 30%/cover;
+    &__title{
+        position: absolute;
+        width: 41vw;
+        right: 5px;
+        top: 25vh;
+    }
+    &__buttons{
+        margin-top: 10vh;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    &__subtitle{
+        position: relative;
+        z-index: 1;
+        @include before_circle;
+    }
+    .hamburger{
+        height: 25px;
+        width: 40px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        cursor: pointer;
+        span{
+            display: block;
+            width: 31px;
+            height: 3px;
+            background: #000000;
+        }
+        &_long{
+            width: 38px !important;
+            margin: 5px 0;
+        }
+    }
+}
+@media screen and(max-width:1024px){
+    .promo{
+        &__title{
+            width: 41vw;
+        }
+    }
+}
+@media screen and(max-width:768px){
+    .promo{
+        &__title{
+            width: 45vw;
+        }
+    }
+}
+@media screen and(max-width:560px){
+    .promo{
+        &__title{
+            top: 12vh;
+            width: 95%;
+        }
+        &__buttons{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            width: 55%;
+            transform: translateX(80%);
+            flex-wrap: wrap;
+            top: 20vh;
+        }
+
+    }
+}
+@media screen and(max-width:425px){
+    .promo{
+        &__title{
+            top: 12vh;
+            width: 95%;
+        }
+        &__buttons{
+            flex-direction: column;
+            align-items: center;
+            top: 18vh;
+        }
+    }
+}

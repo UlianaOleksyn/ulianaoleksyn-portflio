@@ -1,0 +1,23 @@
+.portfolio{
+    margin-top: 70px;
+    &__wrapper{
+        width: 100%;
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-auto-rows: auto;
+    }
+    .portfolio__item_big{
+        grid-column: 1 / 3;
+    }
+    &__link{
+        width: 100%;
+
+        img{
+            width: 100%;
+            border: 1px solid $main_color;
+        }
+    }
+
+}

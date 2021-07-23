@@ -1,0 +1,48 @@
+.price{
+    &__wrapper{
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+    &__item{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        &_header{
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            position: relative;
+            padding-left: 25px;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -35%;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main_color;
+                vertical-align: middle;
+            }
+        }
+        &_number{
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        &_descr{
+            margin-top: 20px;
+            width: 100%;
+            position: relative;
+            font-weight: 500;
+            font-size: 14px;
+            color: #FFFFFF;
+        }   
+    }
+}
+   

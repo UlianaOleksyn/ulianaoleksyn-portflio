@@ -1,0 +1,13 @@
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    img{
+        border-radius: 10px;
+        transition: 0.5s all;
+        &:hover{
+            box-shadow: 7px 7px 5px $main-color, -7px -7px 5px $main-color;
+        }
+    }
+    
+}
