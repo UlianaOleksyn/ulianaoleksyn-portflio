@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 
    document.addEventListener("keypress", (e)=>{
-       console.log(e.code);
         if (menu && e.code == "Escape"){
             menuClose();
         }

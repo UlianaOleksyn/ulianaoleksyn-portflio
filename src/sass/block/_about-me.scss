@@ -1,5 +1,5 @@
 .about-me{
-    padding-top: 70px;
+    padding-top: 90px;
     &__title{
         position: relative;
         z-index: 1;
@@ -127,6 +127,7 @@
 
 @media screen and (max-width:768px){
     .about-me{
+        padding-top: 60px;
         &__education{
             &_header{
                 font-size: 17px;
@@ -153,7 +154,7 @@
         &__foto{
             grid-row: 1 / 2;
             img{
-                width: 60%;
+                width: 40%;
                 height: auto;
                 display: block;
                 margin: 0 auto;
@@ -189,6 +190,7 @@
 }
 @media screen and (max-width:425px){
     .about-me{
+        padding-top: 40px;
         &__descr{
             font-size: 14px;
             padding: 0 15px;

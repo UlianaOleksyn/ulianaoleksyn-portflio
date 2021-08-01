@@ -1,0 +1,23 @@
+@keyframes title-animation{
+    from, to{
+        transform: perspective(300px) rotateX(20deg) scale(1);
+        transition: all 0.5s;
+        text-shadow: 3px 4px  darkgray, -1px -1px black;
+    }
+    50%{
+        transform: perspective(1000px) rotateX(0deg) scale(1.2);
+        text-shadow: 2px 2px black, -2px -2px black;
+    }
+}
+
+@keyframes title-phone_animation{
+    from, to{
+        transform: perspective(300px) rotateX(20deg) scale(0.9);
+        transition: all 0.5s;
+        text-shadow: 2px 3px  rgb(20, 20, 20), -1px -1px black;
+    }
+    50%{
+        transform: perspective(1000px) rotateX(0deg) scale(1);
+        text-shadow: 2px 2px black, -1px -1px black;
+    }
+}

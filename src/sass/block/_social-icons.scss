@@ -6,7 +6,7 @@
         border-radius: 10px;
         transition: 0.5s all;
         &:hover{
-            box-shadow: 7px 7px 5px $main-color, -7px -7px 5px $main-color;
+            box-shadow: 7px -7px 5px #DFB8ED, -7px 7px 5px $main-color;
         }
     }
     
