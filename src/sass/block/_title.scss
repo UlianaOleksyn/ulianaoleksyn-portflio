@@ -25,6 +25,19 @@
     color: #FFFFFF;
     letter-spacing: 3px;
     text-shadow: -2px -2px black, 2px 2px $main_color;
+    &:after{
+        content: '';
+        width: 0;
+        height: 60px;
+        transform: skewX(30deg);
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        border-radius: 15px;
+        background: rgba($color: $main_color, $alpha: 0.3);
+        z-index: 2;
+        animation: subtitle_animation 8s infinite;
+    }
     &__descr{
         padding-top: 10px;
         font-weight: 700;
@@ -103,6 +116,7 @@
     }
     .subtitle{
         line-height: 43px;
+        position: relative;
         &__descr{
             line-height: 1.5;
         }

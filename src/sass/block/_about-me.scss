@@ -45,6 +45,7 @@
                 height: 42px;
                 background-color: $main_color;
                 z-index: 1;
+                // animation: balance 7s infinite;
             }
         }
     }
@@ -56,6 +57,7 @@
             display: grid;
             grid-template-columns: 3fr 2fr 3fr;
             gap: 20px;
+            animation: balance 7s infinite ease-in-out;
             &:before{
                 content: '';
                 position: absolute;
@@ -70,8 +72,10 @@
         }
         &_item{
             padding: 20px 7px;
+            padding-top: 50px;
             position: relative;
-             border: 1px solid $main_color;
+            border: 1px solid $main_color;
+            animation: rotate-card 4s infinite ease-in-out;
             &:before{
                 content: '';
                 position: absolute;
@@ -109,7 +113,17 @@
             margin-top: 3px;
             color: white;
         }
-
+        &_icon{
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            border-radius: 100%;
+            background-color: $main_color;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
     }
 }
 @media screen and (max-width:1024px){
@@ -217,6 +231,7 @@
                 justify-items: end;
                 padding-top: 60px ;
                 margin-right: 5px ;
+                animation: none;
                 &:before{
                     content: '';
                     top: calc(47% + 1px);
@@ -227,6 +242,7 @@
                 }
             }
             &_item{
+                padding: 20px 20px 20px 30px;
                 width: 85%;
                 &-add{
                     display: block;
@@ -252,6 +268,14 @@
             &_years{
                 font-size: 12px;
             }
+            &_icon{
+
+                left: -25px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 50px;
+                height: 50px;
+            }
         }
     }
 }
@@ -269,8 +293,6 @@
         }
         &__education{
             &_item{
-                &-add{
-                }
                 &:before{
                     content: '';
                     left: -12%;

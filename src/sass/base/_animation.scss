@@ -21,3 +21,105 @@
         text-shadow: 2px 2px black, -1px -1px black;
     }
 }
+@keyframes subtitle_animation {
+    from, to{
+        width: 0%;
+        height: 0px;
+        left: 50%;
+        top: 50%
+    }
+    50%{
+        width: 100%;
+        height: 60px;
+        left: 0%;
+        top: 0%;
+    }
+}
+@keyframes balance {
+    from,to{
+        transform: rotateZ(2deg);
+    }
+    50%{
+        transform: rotateZ(-2deg);
+    }
+}
+@keyframes rotate-card{
+    from{
+        transform: rotateY(-30deg);
+    }
+    to{
+        transform: rotateY(30deg);
+    }
+}
+@media screen and(max-width:1024px) {
+    @keyframes subtitle_animation {
+        from, to{
+            width: 0%;
+            height: 0px;
+            left: 50%;
+            top: 40%
+        }
+        50%{
+            width: 100%;
+            height: 60px;
+            left: 0%;
+            top: -20%;
+        }
+    }
+}
+@media screen and(max-width:768px) {
+    @keyframes subtitle_animation {
+        from, to{
+            width: 0%;
+            height: 0px;
+            left: 50%;
+            top: 40%
+        }
+        50%{
+            width: 100%;
+            height: 50px;
+            left: 0%;
+            top: -60%;
+        }
+    }
+}
+@media screen and(max-width:560px) {
+    @keyframes subtitle_animation {
+        from, to{
+            width: 0%;
+            height: 0px;
+            left: 50%;
+            top: 50%
+        }
+        50%{
+            width: 100%;
+            height: 50px;
+            left: 0%;
+            top: -10%;
+        }
+    }
+}
+@media screen and(max-width:425px) {
+    @keyframes subtitle_animation {
+        from, to{
+            width: 0%;
+            height: 0px;
+            left: 50%;
+            top: 50%
+        }
+        50%{
+            width: 90%;
+            height: 50px;
+            left: 5%;
+            top: -25%;
+        }
+    }
+    @keyframes rotate-card{
+        from{
+            transform: rotateX(-20deg);
+        }
+        to{
+            transform: rotateX(20deg);
+        }
+    }
+}

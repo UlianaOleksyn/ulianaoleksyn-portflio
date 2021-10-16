@@ -7,6 +7,7 @@
         grid-auto-rows:  auto;
         gap: 38px;
         justify-content: center;
+        margin-top: 40px;
     }
     &__item{
         background: url("../image/bg_card.jpg") center (center/cover) no-repeat;
@@ -144,20 +145,19 @@
                 left: 0;
                 background-color: $main_color;
             }
-            .c1{
-                width: 90%;
-            }
-            .c2{
-                width: 50%;
-            }
-            .c3{
-                width: 75%;
-            }
-            .c4{
-                width: 20%;
-            }
         }
     }
+    &__kind{
+        display: none;
+        &_visible{
+            display: block;
+        }
+    }
+    &__add_kind
+    {
+        display: none;
+    }
+
 }
 @media screen and (max-width: 768px){
     .skill{
