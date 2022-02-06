@@ -12,7 +12,7 @@
     z-index: 10;
     &__descr{
         font-size: 16px;
-        color: $main_color;
+        color: white;
         text-shadow: 1px 1px black, 1px 1px black;
         width: 245px;
         height: 25px;
@@ -26,7 +26,7 @@
     &__divider{
         width: 2px;
         height: 30px;
-        background-color: $main_color;
+        background-color: white;
     }
     a{
         border-radius: 100%;
@@ -38,7 +38,7 @@
         background: none;
 
         svg path{
-            fill: $main_color;
+            fill: white;
             transition: 0.3s all;
         }
         &:hover{

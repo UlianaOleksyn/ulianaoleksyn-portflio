@@ -1,6 +1,7 @@
 .skill{
     margin-top: 120px;
     &__wrapper{
+        position: relative;
         display: grid;
         grid-template-columns: minmax(min-content, 250px) auto;
         grid-template-rows: min-content;
@@ -14,7 +15,7 @@
         grid-auto-rows: 1fr;
         row-gap: 1px;
         align-items: center;
-        align-self: start;
+        align-self: center;
         position: relative;
         &:before{
             content: '';
@@ -22,7 +23,7 @@
             width: 0;
             height: 0;
             border-top: 150px solid transparent;
-            border-left: 40px solid #8855B7;
+            border-left: 40px solid black;
             border-bottom: 150px solid transparent;
             right: 0px;
             top: 50%;
@@ -33,28 +34,28 @@
         a{
             display: block;
             text-decoration: none;
-            background: url("../image/bg_card.jpg") center (center/cover) no-repeat;
-            border: 1px solid #9C17EE;
             padding: 12px 10px;
+            background: url("../image/bg12.jpg") ;
+            border: 1px solid black;
             border-radius: 10px;
-            box-shadow: 8px 8px 3px $main-color, -5px -5px 10px $main-color;
-            background: url("../image/bg_card.jpg") center (center/cover) no-repeat;
-            border: 1px solid #9C17EE;
-            border-radius: 10px;
-            box-shadow: 8px 8px 3px $main-color, -5px -5px 10px $main-color;
-            color: white;
-            text-shadow: 1px 1px black;
+            box-shadow: 5px 5px 2px $main-color, -3px -3px 10px white;
             text-align: center;
             font-size: 18px;
+            color: white;
+            text-shadow: 1px 1px $main-color;
+
             &:hover{
-                filter: contrast(300%);
-                border-color: black;
-                transition: all 0.5s;
+                border: 1px solid white;
+                color: $main-color;
+                text-shadow: 1px 1px white;
+                transition: all 0.5s;         
+                
             }
         }
         &_active{
-            border-color: white;
-            filter: contrast(300%);
+            filter: contrast(160%);
+
+            transition: all 0.5s;
         }
         .skill__main, .skill__add{
             color: white;
@@ -74,26 +75,26 @@
         }
     }
     &__wrapper_descr{
-        display: flex;
-        text-align: justify;
-        align-items: center;
+        position: relative;
     }
     &__item{    
         position: absolute;
         opacity: 0;
         transition: all 0.7s;
+        top: 50%;
+        transform: translateY(-50%);
         &_active{
             opacity: 1;
             transition: all 0.7s;
         }
         &_descr{
             padding: 50px 30px 20px 30px;
-            font-size: 20px;
-            color: $main-color;
-            text-shadow: 1px 1px black,  -1px 0 white;
+            font-size: 18px;
+            color: white;
+            // text-shadow: 1px 1px grey,  -1px 0 grey;
             box-shadow: 1px 1px white;
             border-radius: 20px;
-            background: url("../image/bg_skill.jpg") left (top/cover) no-repeat;
+            background: url("../image/1.jpg") center (center/cover) no-repeat;
             filter: contrast(120%);
         }
         &_icon{
@@ -127,7 +128,7 @@
 @media screen and(max-width: 1200px){
     .skill{
         &__wrapper{
-            grid-template-columns: minmax(min-content, 150px) auto;
+            grid-template-columns: minmax(min-content, 120px) auto;
         }
         &__menu{
             grid-template-rows: repeat(4, auto);
@@ -148,6 +149,36 @@
 }
 @media screen and(max-width: 650px){
     .skill{
- 
+    display: block;
+        &__wrapper{
+            grid-template-columns: 100%;
+            grid-template-rows:minmax(100px,max-content) minmax(300px,max-content);
+            margin: 30px;
+        }
+        &__menu{  
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px,auto));
+            grid-template-rows: repeat(2,1fr);
+            grid-auto-rows: 1fr;
+            gap: 7px;
+            align-self: start;
+            &:before{
+                content: '';
+                border-left: 120px solid transparent;
+                border-right: 120px solid transparent; 
+                border-top: 20px solid #8855B7;
+                left: 50%;
+                top: calc(100% + 20px);
+                transform: translateX(-50%);
+            }
+            a{
+                padding: 7px 5px;
+                box-shadow: 4px 4px 3px $main-color, -2px -2px 5px $main-color;
+            }
+        }
+        &__wrapper_descr{
+            height: max-content;
+
+        }
     }
 }
