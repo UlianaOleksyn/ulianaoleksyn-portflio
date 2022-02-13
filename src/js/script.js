@@ -2,7 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const menu = document.querySelector(".menu"),
-          menu_content = document.querySelector(".menu__content"),
+          menu_content = menu.querySelector(".menu__content"),
+          menu_item = menu.querySelectorAll(".menu__item"),
           btn_hamburger = document.querySelector(".hamburger"),
           close = document.querySelector(".menu__close"),
           overlay = document.querySelector(".menu__overlay"),
@@ -20,8 +21,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
           btn_skill_add = document.querySelector(".skill__add");
           
     function menuClose(){
-        menu.classList.remove("menu_active");
         menu_content.classList.remove("menu__content_active");
+        menu.classList.remove("menu_active");
     }
     
     btn_hamburger.addEventListener('click', ()=>{
@@ -43,6 +44,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if (menu && e.code == "Escape"){
             menuClose();
         }
+    });
+
+    menu_item.forEach(item => {
+        item.addEventListener('click', () =>{
+            menuClose();
+        });
     });
 
     // procent_text.forEach((item, i) =>{
@@ -128,5 +135,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
             btn_skill_main.style.display = "none";
         });
     });
-
 });

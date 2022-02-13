@@ -1,4 +1,5 @@
 .menu{
+    // display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -12,6 +13,7 @@
         right: 0;
         visibility: visible;
         opacity: 1;
+        transition: 1s all;
     }
     &__overlay{
         position: fixed;
@@ -29,7 +31,8 @@
         height: 100%;
         box-shadow: -3px -3px 10px white;
         z-index: 100;
-        transition: 1s all;
+
+        right: 1%;
         &_active{
             right: 0;
         }
@@ -64,6 +67,7 @@
         background-position: 200% 0, 0 0;
         text-align: center;
         border-top: 2px solid black;
+          
         &:last-child{
             border-bottom: 2px solid #000;
         }
@@ -80,6 +84,8 @@
             color: #FFFFFF;
             text-decoration: none;
             text-transform: uppercase;
+            display: block;
+            height: 100%;
         }
             
     }
