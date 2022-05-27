@@ -1,2 +1,2 @@
 # ulianaoleksyn-portflio
-https://ulianaoleksyn.github.io/ulianaoleksyn-portflio/
+https://ulianaoleksyn.github.io/ulianaoleksyn-portflio/dist
